@@ -28,12 +28,566 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dgvCustomers = new System.Windows.Forms.DataGridView();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAddMovie = new System.Windows.Forms.Button();
+            this.btnUpdateMovie = new System.Windows.Forms.Button();
+            this.btnDeleteMovie = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dgvMovies = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dgvRentals = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.rdbAllRented = new System.Windows.Forms.RadioButton();
+            this.rdbOutRented = new System.Windows.Forms.RadioButton();
+            this.btnIssueMovie = new System.Windows.Forms.Button();
+            this.btnReturnMovie = new System.Windows.Forms.Button();
+            this.btnDeleteCustomer = new System.Windows.Forms.Button();
+            this.btnUpdateCustomer = new System.Windows.Forms.Button();
+            this.btnAddCustomer = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRentals)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Font = new System.Drawing.Font("Modern No. 20", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(259, 118);
+            this.tabControl1.Multiline = true;
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(705, 344);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dgvCustomers);
+            this.tabPage1.Controls.Add(this.flowLayoutPanel2);
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.flowLayoutPanel4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(697, 0);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Customers";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dgvCustomers
+            // 
+            this.dgvCustomers.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCustomers.Location = new System.Drawing.Point(3, 3);
+            this.dgvCustomers.Name = "dgvCustomers";
+            this.dgvCustomers.Size = new System.Drawing.Size(691, 0);
+            this.dgvCustomers.TabIndex = 0;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.txtName);
+            this.flowLayoutPanel2.Controls.Add(this.txtAddress);
+            this.flowLayoutPanel2.Controls.Add(this.txtPhone);
+            this.flowLayoutPanel2.Controls.Add(this.textBox3);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(161, 222);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(593, 43);
+            this.flowLayoutPanel2.TabIndex = 16;
+            // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(3, 3);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(139, 26);
+            this.txtName.TabIndex = 11;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(148, 3);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(139, 26);
+            this.txtAddress.TabIndex = 15;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(293, 3);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(139, 26);
+            this.txtPhone.TabIndex = 14;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(438, 3);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(139, 26);
+            this.textBox3.TabIndex = 13;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(446, 128);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(139, 26);
+            this.textBox2.TabIndex = 12;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.btnAddMovie);
+            this.flowLayoutPanel4.Controls.Add(this.btnUpdateMovie);
+            this.flowLayoutPanel4.Controls.Add(this.btnDeleteMovie);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(98, 222);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(491, 46);
+            this.flowLayoutPanel4.TabIndex = 13;
+            // 
+            // btnAddMovie
+            // 
+            this.btnAddMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnAddMovie.FlatAppearance.BorderSize = 3;
+            this.btnAddMovie.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMovie.Location = new System.Drawing.Point(3, 3);
+            this.btnAddMovie.Name = "btnAddMovie";
+            this.btnAddMovie.Size = new System.Drawing.Size(140, 35);
+            this.btnAddMovie.TabIndex = 1;
+            this.btnAddMovie.Text = "Add Movie";
+            this.btnAddMovie.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdateMovie
+            // 
+            this.btnUpdateMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnUpdateMovie.FlatAppearance.BorderSize = 3;
+            this.btnUpdateMovie.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateMovie.Location = new System.Drawing.Point(149, 3);
+            this.btnUpdateMovie.Name = "btnUpdateMovie";
+            this.btnUpdateMovie.Size = new System.Drawing.Size(140, 35);
+            this.btnUpdateMovie.TabIndex = 7;
+            this.btnUpdateMovie.Text = "Update Movie";
+            this.btnUpdateMovie.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteMovie
+            // 
+            this.btnDeleteMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnDeleteMovie.FlatAppearance.BorderSize = 3;
+            this.btnDeleteMovie.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteMovie.Location = new System.Drawing.Point(295, 3);
+            this.btnDeleteMovie.Name = "btnDeleteMovie";
+            this.btnDeleteMovie.Size = new System.Drawing.Size(140, 35);
+            this.btnDeleteMovie.TabIndex = 2;
+            this.btnDeleteMovie.Text = "Delete Movie";
+            this.btnDeleteMovie.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dgvMovies);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(697, 0);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Movies";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dgvMovies
+            // 
+            this.dgvMovies.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMovies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMovies.Location = new System.Drawing.Point(3, 3);
+            this.dgvMovies.Name = "dgvMovies";
+            this.dgvMovies.Size = new System.Drawing.Size(691, 0);
+            this.dgvMovies.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dgvRentals);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(697, 0);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Rentals";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dgvRentals
+            // 
+            this.dgvRentals.BackgroundColor = System.Drawing.Color.White;
+            this.dgvRentals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRentals.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvRentals.Location = new System.Drawing.Point(0, 0);
+            this.dgvRentals.Name = "dgvRentals";
+            this.dgvRentals.Size = new System.Drawing.Size(697, 0);
+            this.dgvRentals.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.flowLayoutPanel7);
+            this.panel1.Location = new System.Drawing.Point(3, 69);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(326, 62);
+            this.panel1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(326, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "--- Rented Movies ---";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel7
+            // 
+            this.flowLayoutPanel7.Controls.Add(this.rdbAllRented);
+            this.flowLayoutPanel7.Controls.Add(this.rdbOutRented);
+            this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(0, 21);
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(326, 41);
+            this.flowLayoutPanel7.TabIndex = 15;
+            // 
+            // rdbAllRented
+            // 
+            this.rdbAllRented.AutoSize = true;
+            this.rdbAllRented.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbAllRented.ForeColor = System.Drawing.Color.Transparent;
+            this.rdbAllRented.Location = new System.Drawing.Point(3, 3);
+            this.rdbAllRented.Name = "rdbAllRented";
+            this.rdbAllRented.Size = new System.Drawing.Size(97, 22);
+            this.rdbAllRented.TabIndex = 1;
+            this.rdbAllRented.TabStop = true;
+            this.rdbAllRented.Text = "All Rented";
+            this.rdbAllRented.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rdbAllRented.UseVisualStyleBackColor = true;
+            // 
+            // rdbOutRented
+            // 
+            this.rdbOutRented.AutoSize = true;
+            this.rdbOutRented.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbOutRented.ForeColor = System.Drawing.Color.Transparent;
+            this.rdbOutRented.Location = new System.Drawing.Point(106, 3);
+            this.rdbOutRented.Name = "rdbOutRented";
+            this.rdbOutRented.Size = new System.Drawing.Size(99, 22);
+            this.rdbOutRented.TabIndex = 2;
+            this.rdbOutRented.TabStop = true;
+            this.rdbOutRented.Text = "Out Rented";
+            this.rdbOutRented.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rdbOutRented.UseVisualStyleBackColor = true;
+            // 
+            // btnIssueMovie
+            // 
+            this.btnIssueMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnIssueMovie.FlatAppearance.BorderSize = 3;
+            this.btnIssueMovie.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIssueMovie.ForeColor = System.Drawing.Color.Red;
+            this.btnIssueMovie.Location = new System.Drawing.Point(169, 3);
+            this.btnIssueMovie.Name = "btnIssueMovie";
+            this.btnIssueMovie.Size = new System.Drawing.Size(160, 60);
+            this.btnIssueMovie.TabIndex = 6;
+            this.btnIssueMovie.Text = "Issue Movie";
+            this.btnIssueMovie.UseVisualStyleBackColor = true;
+            // 
+            // btnReturnMovie
+            // 
+            this.btnReturnMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnReturnMovie.FlatAppearance.BorderSize = 3;
+            this.btnReturnMovie.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnMovie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnReturnMovie.Location = new System.Drawing.Point(3, 3);
+            this.btnReturnMovie.Name = "btnReturnMovie";
+            this.btnReturnMovie.Size = new System.Drawing.Size(160, 60);
+            this.btnReturnMovie.TabIndex = 5;
+            this.btnReturnMovie.Text = "Return Movie";
+            this.btnReturnMovie.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteCustomer
+            // 
+            this.btnDeleteCustomer.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnDeleteCustomer.FlatAppearance.BorderSize = 3;
+            this.btnDeleteCustomer.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(295, 3);
+            this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+            this.btnDeleteCustomer.Size = new System.Drawing.Size(140, 35);
+            this.btnDeleteCustomer.TabIndex = 4;
+            this.btnDeleteCustomer.Text = "Delete Customer";
+            this.btnDeleteCustomer.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdateCustomer
+            // 
+            this.btnUpdateCustomer.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnUpdateCustomer.FlatAppearance.BorderSize = 3;
+            this.btnUpdateCustomer.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateCustomer.Location = new System.Drawing.Point(149, 3);
+            this.btnUpdateCustomer.Name = "btnUpdateCustomer";
+            this.btnUpdateCustomer.Size = new System.Drawing.Size(140, 35);
+            this.btnUpdateCustomer.TabIndex = 3;
+            this.btnUpdateCustomer.Text = "Update Customer";
+            this.btnUpdateCustomer.UseVisualStyleBackColor = true;
+            // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnAddCustomer.FlatAppearance.BorderSize = 3;
+            this.btnAddCustomer.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomer.Location = new System.Drawing.Point(3, 3);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(140, 35);
+            this.btnAddCustomer.TabIndex = 0;
+            this.btnAddCustomer.Text = "Add Customer";
+            this.btnAddCustomer.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnReturnMovie);
+            this.flowLayoutPanel1.Controls.Add(this.btnIssueMovie);
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(377, 197);
+            this.flowLayoutPanel1.TabIndex = 10;
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.Controls.Add(this.textBox1);
+            this.flowLayoutPanel6.Controls.Add(this.textBox4);
+            this.flowLayoutPanel6.Controls.Add(this.textBox5);
+            this.flowLayoutPanel6.Controls.Add(this.textBox6);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 55);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(819, 43);
+            this.flowLayoutPanel6.TabIndex = 17;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(139, 26);
+            this.textBox1.TabIndex = 11;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(148, 3);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(139, 26);
+            this.textBox4.TabIndex = 15;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(293, 3);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(139, 26);
+            this.textBox5.TabIndex = 14;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(438, 3);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(139, 26);
+            this.textBox6.TabIndex = 13;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel5.Controls.Add(this.flowLayoutPanel3);
+            this.flowLayoutPanel5.Controls.Add(this.flowLayoutPanel6);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(824, 197);
+            this.flowLayoutPanel5.TabIndex = 11;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.btnAddCustomer);
+            this.flowLayoutPanel3.Controls.Add(this.btnUpdateCustomer);
+            this.flowLayoutPanel3.Controls.Add(this.btnDeleteCustomer);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(819, 46);
+            this.flowLayoutPanel3.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1205, 100);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Movie Database";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1205, 100);
+            this.panel3.TabIndex = 13;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 485);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.flowLayoutPanel5);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.flowLayoutPanel1);
+            this.splitContainer1.Size = new System.Drawing.Size(1205, 197);
+            this.splitContainer1.SplitterDistance = 824;
+            this.splitContainer1.TabIndex = 14;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackgroundImage = global::DSED02ProjectMovies.Resource1.NdBYC1g;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1205, 682);
+            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Movies Database";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRentals)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.flowLayoutPanel7.ResumeLayout(false);
+            this.flowLayoutPanel7.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel6.ResumeLayout(false);
+            this.flowLayoutPanel6.PerformLayout();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.DataGridView dgvCustomers;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dgvMovies;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView dgvRentals;
+        private System.Windows.Forms.Button btnDeleteCustomer;
+        private System.Windows.Forms.Button btnUpdateCustomer;
+        private System.Windows.Forms.Button btnDeleteMovie;
+        private System.Windows.Forms.Button btnAddMovie;
+        private System.Windows.Forms.Button btnAddCustomer;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton rdbOutRented;
+        private System.Windows.Forms.RadioButton rdbAllRented;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnUpdateMovie;
+        private System.Windows.Forms.Button btnIssueMovie;
+        private System.Windows.Forms.Button btnReturnMovie;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
     }
 }
 

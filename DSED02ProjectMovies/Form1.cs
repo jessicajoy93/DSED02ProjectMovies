@@ -12,9 +12,34 @@ namespace DSED02ProjectMovies
 {
     public partial class Form1 : Form
     {
+        //create an instance of the Database Class
+        Database myDatabase = new Database();
+
         public Form1()
         {
             InitializeComponent();
+            loadDB();
+        }
+
+        public void loadDB()
+        {
+            //load the customer dgv
+            DisplayDataGridViewCustomer();
+
+        }
+
+        private void DisplayDataGridViewCustomer()
+        {
+            dgvCustomer.DataSource = null;
+            try
+            {
+                dgvCustomer.DataSource = myDatabase.FillDGVCustomerWithCustomer();
+                //dgvCustomers.AutoResizeColumns((DataGridViewAutoSizeColumnsMode)DataGridViewAutoSizeColumnMode.AllCells);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
