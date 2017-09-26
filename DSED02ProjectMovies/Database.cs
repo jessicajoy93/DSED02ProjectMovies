@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,6 +24,8 @@ namespace DSED02ProjectMovies
             Command.Connection = Connection;
         }
 
+        public int CustomerID { get; set; }
+
         private void SqlConnection(DataTable dt)
         {
             // connect in to the DB and get the SQL
@@ -38,12 +41,48 @@ namespace DSED02ProjectMovies
         public DataTable FillDGVCustomerWithCustomer()
         {
             DataTable dt = new DataTable();
-            using (da = new SqlDataAdapter("select*from CustomerData", Connection))
+            using (da = new SqlDataAdapter("select*from CustomerData ORDER by 'Last Name'", Connection))
             {
                 SqlConnection(dt);
             }
             //pass the datatable data to the DataGridView;
             return dt;
+        }
+
+        public DataTable FillDGVMovieWithMovie()
+        {
+            DataTable dt = new DataTable();
+            using (da = new SqlDataAdapter("select*from MoviesInfoData Order by Year DESC, Title ASC", Connection))
+            {
+                SqlConnection(dt);
+            }
+            //pass the datatable data to the DataGridView;
+            return dt;
+        }
+
+        public DataTable FillDGVRentalsWithRentals()
+        {
+            DataTable dt = new DataTable();
+            using (da = new SqlDataAdapter("select*from CustomerAndMoviesRented Order by 'Last Name', Title", Connection))
+            {
+                SqlConnection(dt);
+            }
+            //pass the datatable data to the DataGridView;
+            return dt;
+        }
+
+        public DataTable FillDGVCustomerWithCustomerClick(string Customervalue)
+        {
+            string SQL = "select 'First Name', 'Last Name', Address, Phone from CustomerData where CustID='" +
+                         Customervalue + "'";
+            using (da = new SqlDataAdapter(SQL, Connection))
+            {
+                //connect in to the DB and get the SQL
+                DataTable dt = new DataTable();
+                //create a datatable as we only have one table, customer
+                SqlConnection(dt);
+                return dt;
+            }
         }
     }
 }
