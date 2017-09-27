@@ -25,6 +25,7 @@ namespace DSED02ProjectMovies
         }
 
         public int CustomerID { get; set; }
+        public int MovieID { get; set; }
 
         private void SqlConnection(DataTable dt)
         {
@@ -52,7 +53,7 @@ namespace DSED02ProjectMovies
         public DataTable FillDGVMovieWithMovie()
         {
             DataTable dt = new DataTable();
-            using (da = new SqlDataAdapter("select*from MoviesInfoData Order by Year DESC, Title ASC", Connection))
+            using (da = new SqlDataAdapter("select * from MoviesInfoData Order by Year DESC, Title ASC", Connection))
             {
                 SqlConnection(dt);
             }
@@ -71,10 +72,38 @@ namespace DSED02ProjectMovies
             return dt;
         }
 
-        public DataTable FillDGVCustomerWithCustomerClick(string Customervalue)
+        //public DataTable FillDGVCustomerWithCustomerClick(string Customervalue)
+        //{
+        //    string SQL = "select 'First Name', 'Last Name', Address, Phone from CustomerData where CustID='" +
+        //                 Customervalue + "'";
+        //    using (da = new SqlDataAdapter(SQL, Connection))
+        //    {
+        //        //connect in to the DB and get the SQL
+        //        DataTable dt = new DataTable();
+        //        //create a datatable as we only have one table, customer
+        //        SqlConnection(dt);
+        //        return dt;
+        //    }
+        //}
+
+        //public DataTable FillDGVMovieWithMovieClick(string Movievalue)
+        //{
+        //    string SQL = "select Rating, Title, Year, 'Rental Cost', Copies, Plot, Genre from MoviesData where MovieID='" +
+        //                 Movievalue + "'";
+        //    using (da = new SqlDataAdapter(SQL, Connection))
+        //    {
+        //        //connect in to the DB and get the SQL
+        //        DataTable dt = new DataTable();
+        //        //create a datatable as we only have one table, customer
+        //        SqlConnection(dt);
+        //        return dt;
+        //    }
+        //}
+
+        public DataTable FillLBLPlot(string Movievalue)
         {
-            string SQL = "select 'First Name', 'Last Name', Address, Phone from CustomerData where CustID='" +
-                         Customervalue + "'";
+            string SQL = "select Plot from MoviesData where MovieID='" +
+                         Movievalue + "'";
             using (da = new SqlDataAdapter(SQL, Connection))
             {
                 //connect in to the DB and get the SQL

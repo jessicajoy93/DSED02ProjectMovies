@@ -72,10 +72,14 @@ namespace DSED02ProjectMovies
                 dgvMovies.DataSource = myDatabase.FillDGVMovieWithMovie();
                 //dgvMovies.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                dgvMovies.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                dgvMovies.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                dgvMovies.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                dgvMovies.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                dgvMovies.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells; //id
+                dgvMovies.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells; //rating
+                dgvMovies.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;//title
+                dgvMovies.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;//year
+                dgvMovies.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;//rental cost
+                dgvMovies.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;//copies
+                dgvMovies.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;//plot
+                dgvMovies.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;//genre
             }
             catch (Exception ex)
             {
@@ -111,7 +115,7 @@ namespace DSED02ProjectMovies
             try
             {
                 myDatabase.CustomerID = (int)dgvCustomer.Rows[e.RowIndex].Cells[0].Value;
-                lblCustID.Text = dgvCustomer.Rows[e.RowIndex].Cells[0].Value.ToString();
+                lblCustID.Text = myDatabase.CustomerID.ToString();
                 txtFirstName.Text = dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txtLastName.Text = dgvCustomer.Rows[e.RowIndex].Cells[2].Value.ToString();
                 txtAddress.Text = dgvCustomer.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -121,6 +125,17 @@ namespace DSED02ProjectMovies
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dgvMovies_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //lblMovieTitle.Text = dgvMovies.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtMovieName.Text = dgvMovies.Rows[e.RowIndex].Cells[2].Value.ToString();
+            //lblMoviePlot.Text = dgvMovies.Rows[e.RowIndex].Cells[6].Value.ToString();
+            txtMoviePlot.Text = dgvMovies.Rows[e.RowIndex].Cells[6].Value.ToString();
+            //lblMovieGenre.Text = dgvMovies.Rows[e.RowIndex].Cells[7].Value.ToString();
+            txtMovieGenre.Text = dgvMovies.Rows[e.RowIndex].Cells[7].Value.ToString();
+
         }
     }
 }
