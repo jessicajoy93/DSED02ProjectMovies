@@ -88,9 +88,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dgvRentals = new System.Windows.Forms.DataGridView();
-            this.pbBackgroundImage = new System.Windows.Forms.PictureBox();
             this.lblCustID = new System.Windows.Forms.Label();
             this.lblMovieID = new System.Windows.Forms.Label();
+            this.pbBackgroundImage = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Customers.SuspendLayout();
@@ -243,7 +243,7 @@
             this.tabControl1.Controls.Add(this.Movies);
             this.tabControl1.Controls.Add(this.Rentals);
             this.tabControl1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(259, 81);
+            this.tabControl1.Location = new System.Drawing.Point(259, 83);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(703, 378);
@@ -320,6 +320,9 @@
             // 
             // btnDeleteCustomer
             // 
+            this.btnDeleteCustomer.BackColor = System.Drawing.Color.White;
+            this.btnDeleteCustomer.BackgroundImage = global::DSED02ProjectMovies.Resource1.delete;
+            this.btnDeleteCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDeleteCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDeleteCustomer.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnDeleteCustomer.FlatAppearance.BorderSize = 3;
@@ -330,12 +333,14 @@
             this.btnDeleteCustomer.Size = new System.Drawing.Size(50, 49);
             this.btnDeleteCustomer.TabIndex = 4;
             this.btnDeleteCustomer.Tag = "Customer";
-            this.btnDeleteCustomer.Text = "Delete";
-            this.btnDeleteCustomer.UseVisualStyleBackColor = true;
+            this.btnDeleteCustomer.UseVisualStyleBackColor = false;
             this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
             // 
             // btnClearCustomer
             // 
+            this.btnClearCustomer.BackColor = System.Drawing.Color.White;
+            this.btnClearCustomer.BackgroundImage = global::DSED02ProjectMovies.Resource1.reset;
+            this.btnClearCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClearCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClearCustomer.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnClearCustomer.FlatAppearance.BorderSize = 3;
@@ -345,12 +350,14 @@
             this.btnClearCustomer.Name = "btnClearCustomer";
             this.btnClearCustomer.Size = new System.Drawing.Size(51, 49);
             this.btnClearCustomer.TabIndex = 18;
-            this.btnClearCustomer.Text = "Clear";
-            this.btnClearCustomer.UseVisualStyleBackColor = true;
+            this.btnClearCustomer.UseVisualStyleBackColor = false;
             this.btnClearCustomer.Click += new System.EventHandler(this.btnClearCustomer_Click);
             // 
             // btnUpdateCustomer
             // 
+            this.btnUpdateCustomer.BackColor = System.Drawing.Color.White;
+            this.btnUpdateCustomer.BackgroundImage = global::DSED02ProjectMovies.Resource1.update;
+            this.btnUpdateCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUpdateCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUpdateCustomer.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnUpdateCustomer.FlatAppearance.BorderSize = 3;
@@ -360,12 +367,14 @@
             this.btnUpdateCustomer.Name = "btnUpdateCustomer";
             this.btnUpdateCustomer.Size = new System.Drawing.Size(50, 49);
             this.btnUpdateCustomer.TabIndex = 3;
-            this.btnUpdateCustomer.Text = "Update";
-            this.btnUpdateCustomer.UseVisualStyleBackColor = true;
+            this.btnUpdateCustomer.UseVisualStyleBackColor = false;
             this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
             // 
             // btnAddCustomer
             // 
+            this.btnAddCustomer.BackColor = System.Drawing.Color.White;
+            this.btnAddCustomer.BackgroundImage = global::DSED02ProjectMovies.Resource1.add;
+            this.btnAddCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddCustomer.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnAddCustomer.FlatAppearance.BorderSize = 3;
@@ -375,8 +384,7 @@
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(50, 49);
             this.btnAddCustomer.TabIndex = 0;
-            this.btnAddCustomer.Text = "Add";
-            this.btnAddCustomer.UseVisualStyleBackColor = true;
+            this.btnAddCustomer.UseVisualStyleBackColor = false;
             this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // tableLayoutPanel4
@@ -971,17 +979,6 @@
             this.dgvRentals.Size = new System.Drawing.Size(489, 341);
             this.dgvRentals.TabIndex = 1;
             // 
-            // pbBackgroundImage
-            // 
-            this.pbBackgroundImage.BackgroundImage = global::DSED02ProjectMovies.Resource1.NdBYC1g;
-            this.pbBackgroundImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbBackgroundImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbBackgroundImage.Location = new System.Drawing.Point(0, 0);
-            this.pbBackgroundImage.Name = "pbBackgroundImage";
-            this.pbBackgroundImage.Size = new System.Drawing.Size(1205, 682);
-            this.pbBackgroundImage.TabIndex = 17;
-            this.pbBackgroundImage.TabStop = false;
-            // 
             // lblCustID
             // 
             this.lblCustID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -997,6 +994,17 @@
             this.lblMovieID.Name = "lblMovieID";
             this.lblMovieID.Size = new System.Drawing.Size(100, 23);
             this.lblMovieID.TabIndex = 19;
+            // 
+            // pbBackgroundImage
+            // 
+            this.pbBackgroundImage.BackgroundImage = global::DSED02ProjectMovies.Resource1.NdBYC1g;
+            this.pbBackgroundImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbBackgroundImage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbBackgroundImage.Location = new System.Drawing.Point(0, 0);
+            this.pbBackgroundImage.Name = "pbBackgroundImage";
+            this.pbBackgroundImage.Size = new System.Drawing.Size(1205, 682);
+            this.pbBackgroundImage.TabIndex = 17;
+            this.pbBackgroundImage.TabStop = false;
             // 
             // Form1
             // 
