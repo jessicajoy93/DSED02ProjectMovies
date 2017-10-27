@@ -37,6 +37,27 @@
             this.btnUpdateMovie = new System.Windows.Forms.Button();
             this.btnDeleteMovie = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Movies = new System.Windows.Forms.TabPage();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnClearMovie = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtRentalCost = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtMovieCopies = new System.Windows.Forms.TextBox();
+            this.txtMovieYear = new System.Windows.Forms.TextBox();
+            this.txtMovieRating = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtMovieName = new System.Windows.Forms.TextBox();
+            this.txtMoviePlot = new System.Windows.Forms.TextBox();
+            this.txtMovieGenre = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dgvMovies = new System.Windows.Forms.DataGridView();
             this.Customers = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
@@ -55,31 +76,12 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dgvCustomer = new System.Windows.Forms.DataGridView();
-            this.Movies = new System.Windows.Forms.TabPage();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnClearMovie = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtMovieCopies = new System.Windows.Forms.TextBox();
-            this.txtMovieYear = new System.Windows.Forms.TextBox();
-            this.txtMovieRating = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtMovieName = new System.Windows.Forms.TextBox();
-            this.txtMoviePlot = new System.Windows.Forms.TextBox();
-            this.txtMovieGenre = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dgvMovies = new System.Windows.Forms.DataGridView();
             this.Rentals = new System.Windows.Forms.TabPage();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnIssueMovie = new System.Windows.Forms.Button();
+            this.btnReturnMovie = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label13 = new System.Windows.Forms.Label();
             this.txtRentalsFN = new System.Windows.Forms.TextBox();
@@ -88,23 +90,23 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dgvRentals = new System.Windows.Forms.DataGridView();
+            this.TopCustomersMovies = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.dgvTopMovies = new System.Windows.Forms.DataGridView();
+            this.dgvTopCust = new System.Windows.Forms.DataGridView();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pbBackgroundImage = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblCustID = new System.Windows.Forms.Label();
             this.lblMovieID = new System.Windows.Forms.Label();
-            this.pbBackgroundImage = new System.Windows.Forms.PictureBox();
+            this.lblRMID = new System.Windows.Forms.Label();
+            this.lblDateRented = new System.Windows.Forms.Label();
+            this.lblDateReturned = new System.Windows.Forms.Label();
+            this.lblRentalFN = new System.Windows.Forms.Label();
+            this.lblRentalLN = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.Customers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
-            this.splitContainer4.Panel1.SuspendLayout();
-            this.splitContainer4.Panel2.SuspendLayout();
-            this.splitContainer4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
-            this.splitContainer5.Panel1.SuspendLayout();
-            this.splitContainer5.Panel2.SuspendLayout();
-            this.splitContainer5.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.Movies.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -117,6 +119,18 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).BeginInit();
+            this.Customers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
+            this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.Panel2.SuspendLayout();
+            this.splitContainer4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
+            this.splitContainer5.Panel1.SuspendLayout();
+            this.splitContainer5.Panel2.SuspendLayout();
+            this.splitContainer5.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.Rentals.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).BeginInit();
             this.splitContainer6.Panel1.SuspendLayout();
@@ -129,7 +143,12 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRentals)).BeginInit();
+            this.TopCustomersMovies.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTopMovies)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTopCust)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackgroundImage)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rdbAllRented
@@ -190,6 +209,8 @@
             // 
             // btnAddMovie
             // 
+            this.btnAddMovie.BackgroundImage = global::DSED02ProjectMovies.Resource1.add;
+            this.btnAddMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddMovie.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnAddMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnAddMovie.FlatAppearance.BorderSize = 3;
@@ -199,12 +220,13 @@
             this.btnAddMovie.Name = "btnAddMovie";
             this.btnAddMovie.Size = new System.Drawing.Size(50, 49);
             this.btnAddMovie.TabIndex = 0;
-            this.btnAddMovie.Text = "Add";
             this.btnAddMovie.UseVisualStyleBackColor = true;
             this.btnAddMovie.Click += new System.EventHandler(this.btnAddMovie_Click);
             // 
             // btnUpdateMovie
             // 
+            this.btnUpdateMovie.BackgroundImage = global::DSED02ProjectMovies.Resource1.update;
+            this.btnUpdateMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUpdateMovie.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUpdateMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnUpdateMovie.FlatAppearance.BorderSize = 3;
@@ -214,12 +236,13 @@
             this.btnUpdateMovie.Name = "btnUpdateMovie";
             this.btnUpdateMovie.Size = new System.Drawing.Size(50, 49);
             this.btnUpdateMovie.TabIndex = 3;
-            this.btnUpdateMovie.Text = "Update";
             this.btnUpdateMovie.UseVisualStyleBackColor = true;
             this.btnUpdateMovie.Click += new System.EventHandler(this.btnUpdateMovie_Click);
             // 
             // btnDeleteMovie
             // 
+            this.btnDeleteMovie.BackgroundImage = global::DSED02ProjectMovies.Resource1.delete;
+            this.btnDeleteMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDeleteMovie.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDeleteMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnDeleteMovie.FlatAppearance.BorderSize = 3;
@@ -230,24 +253,318 @@
             this.btnDeleteMovie.Size = new System.Drawing.Size(50, 49);
             this.btnDeleteMovie.TabIndex = 4;
             this.btnDeleteMovie.Tag = "Movie";
-            this.btnDeleteMovie.Text = "Delete";
             this.btnDeleteMovie.UseVisualStyleBackColor = true;
             this.btnDeleteMovie.Click += new System.EventHandler(this.btnDeleteMovie_Click);
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.Customers);
             this.tabControl1.Controls.Add(this.Movies);
             this.tabControl1.Controls.Add(this.Rentals);
+            this.tabControl1.Controls.Add(this.TopCustomersMovies);
             this.tabControl1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(259, 83);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(703, 378);
             this.tabControl1.TabIndex = 16;
+            // 
+            // Movies
+            // 
+            this.Movies.Controls.Add(this.splitContainer2);
+            this.Movies.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Movies.Location = new System.Drawing.Point(4, 33);
+            this.Movies.Name = "Movies";
+            this.Movies.Padding = new System.Windows.Forms.Padding(3);
+            this.Movies.Size = new System.Drawing.Size(695, 341);
+            this.Movies.TabIndex = 1;
+            this.Movies.Text = "Movies";
+            this.Movies.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.IsSplitterFixed = true;
+            this.splitContainer2.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.splitContainer3);
+            this.splitContainer2.Panel1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.dgvMovies);
+            this.splitContainer2.Panel2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer2.Size = new System.Drawing.Size(689, 335);
+            this.splitContainer2.SplitterDistance = 201;
+            this.splitContainer2.TabIndex = 0;
+            // 
+            // splitContainer3
+            // 
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.IsSplitterFixed = true;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.tableLayoutPanel2);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.Controls.Add(this.tableLayoutPanel1);
+            this.splitContainer3.Size = new System.Drawing.Size(201, 335);
+            this.splitContainer3.SplitterDistance = 49;
+            this.splitContainer3.TabIndex = 0;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Controls.Add(this.btnDeleteMovie, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnClearMovie, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnUpdateMovie, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnAddMovie, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(201, 49);
+            this.tableLayoutPanel2.TabIndex = 18;
+            // 
+            // btnClearMovie
+            // 
+            this.btnClearMovie.BackgroundImage = global::DSED02ProjectMovies.Resource1.reset;
+            this.btnClearMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClearMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClearMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnClearMovie.FlatAppearance.BorderSize = 3;
+            this.btnClearMovie.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearMovie.Location = new System.Drawing.Point(150, 0);
+            this.btnClearMovie.Margin = new System.Windows.Forms.Padding(0);
+            this.btnClearMovie.Name = "btnClearMovie";
+            this.btnClearMovie.Size = new System.Drawing.Size(51, 49);
+            this.btnClearMovie.TabIndex = 18;
+            this.btnClearMovie.UseVisualStyleBackColor = true;
+            this.btnClearMovie.Click += new System.EventHandler(this.btnClearMovie_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel1.Controls.Add(this.txtRentalCost, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label17, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.txtMovieCopies, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtMovieYear, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtMovieRating, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtMovieName, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtMoviePlot, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtMovieGenre, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 5);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 7;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33267F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.004F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33267F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33267F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33267F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33267F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33267F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(201, 282);
+            this.tableLayoutPanel1.TabIndex = 18;
+            // 
+            // txtRentalCost
+            // 
+            this.txtRentalCost.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtRentalCost.Enabled = false;
+            this.txtRentalCost.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRentalCost.Location = new System.Drawing.Point(73, 244);
+            this.txtRentalCost.Multiline = true;
+            this.txtRentalCost.Name = "txtRentalCost";
+            this.txtRentalCost.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtRentalCost.Size = new System.Drawing.Size(125, 35);
+            this.txtRentalCost.TabIndex = 27;
+            // 
+            // label17
+            // 
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(3, 244);
+            this.label17.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 38);
+            this.label17.TabIndex = 27;
+            this.label17.Text = "Price";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtMovieCopies
+            // 
+            this.txtMovieCopies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMovieCopies.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovieCopies.Location = new System.Drawing.Point(73, 170);
+            this.txtMovieCopies.Multiline = true;
+            this.txtMovieCopies.Name = "txtMovieCopies";
+            this.txtMovieCopies.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMovieCopies.Size = new System.Drawing.Size(125, 31);
+            this.txtMovieCopies.TabIndex = 24;
+            // 
+            // txtMovieYear
+            // 
+            this.txtMovieYear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMovieYear.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovieYear.Location = new System.Drawing.Point(73, 133);
+            this.txtMovieYear.Multiline = true;
+            this.txtMovieYear.Name = "txtMovieYear";
+            this.txtMovieYear.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMovieYear.Size = new System.Drawing.Size(125, 31);
+            this.txtMovieYear.TabIndex = 23;
+            // 
+            // txtMovieRating
+            // 
+            this.txtMovieRating.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMovieRating.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovieRating.Location = new System.Drawing.Point(73, 207);
+            this.txtMovieRating.Multiline = true;
+            this.txtMovieRating.Name = "txtMovieRating";
+            this.txtMovieRating.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMovieRating.Size = new System.Drawing.Size(125, 31);
+            this.txtMovieRating.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 3);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 34);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Title";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtMovieName
+            // 
+            this.txtMovieName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMovieName.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovieName.Location = new System.Drawing.Point(73, 3);
+            this.txtMovieName.Multiline = true;
+            this.txtMovieName.Name = "txtMovieName";
+            this.txtMovieName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMovieName.Size = new System.Drawing.Size(125, 31);
+            this.txtMovieName.TabIndex = 3;
+            // 
+            // txtMoviePlot
+            // 
+            this.txtMoviePlot.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMoviePlot.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMoviePlot.Location = new System.Drawing.Point(73, 40);
+            this.txtMoviePlot.Multiline = true;
+            this.txtMoviePlot.Name = "txtMoviePlot";
+            this.txtMoviePlot.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMoviePlot.Size = new System.Drawing.Size(125, 50);
+            this.txtMoviePlot.TabIndex = 13;
+            // 
+            // txtMovieGenre
+            // 
+            this.txtMovieGenre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMovieGenre.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovieGenre.Location = new System.Drawing.Point(73, 96);
+            this.txtMovieGenre.Multiline = true;
+            this.txtMovieGenre.Name = "txtMovieGenre";
+            this.txtMovieGenre.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMovieGenre.Size = new System.Drawing.Size(125, 31);
+            this.txtMovieGenre.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 40);
+            this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 53);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Plot";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 96);
+            this.label5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 34);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Genre";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 133);
+            this.label6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 34);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Year";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label7
+            // 
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 170);
+            this.label7.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 34);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Copies";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label9
+            // 
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 207);
+            this.label9.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 34);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Rating";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // dgvMovies
+            // 
+            this.dgvMovies.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvMovies.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMovies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMovies.Location = new System.Drawing.Point(0, 0);
+            this.dgvMovies.Name = "dgvMovies";
+            this.dgvMovies.Size = new System.Drawing.Size(484, 335);
+            this.dgvMovies.TabIndex = 1;
+            this.dgvMovies.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovies_CellContentClick);
             // 
             // Customers
             // 
@@ -513,273 +830,6 @@
             this.dgvCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellContentClick);
             this.dgvCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovies_CellContentClick);
             // 
-            // Movies
-            // 
-            this.Movies.Controls.Add(this.splitContainer2);
-            this.Movies.Font = new System.Drawing.Font("Modern No. 20", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Movies.Location = new System.Drawing.Point(4, 33);
-            this.Movies.Name = "Movies";
-            this.Movies.Padding = new System.Windows.Forms.Padding(3);
-            this.Movies.Size = new System.Drawing.Size(695, 341);
-            this.Movies.TabIndex = 1;
-            this.Movies.Text = "Movies";
-            this.Movies.UseVisualStyleBackColor = true;
-            // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.IsSplitterFixed = true;
-            this.splitContainer2.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer2.Name = "splitContainer2";
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.Controls.Add(this.splitContainer3);
-            this.splitContainer2.Panel1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.dgvMovies);
-            this.splitContainer2.Panel2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.splitContainer2.Size = new System.Drawing.Size(689, 335);
-            this.splitContainer2.SplitterDistance = 201;
-            this.splitContainer2.TabIndex = 0;
-            // 
-            // splitContainer3
-            // 
-            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.IsSplitterFixed = true;
-            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Name = "splitContainer3";
-            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer3.Panel1
-            // 
-            this.splitContainer3.Panel1.Controls.Add(this.tableLayoutPanel2);
-            // 
-            // splitContainer3.Panel2
-            // 
-            this.splitContainer3.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer3.Size = new System.Drawing.Size(201, 335);
-            this.splitContainer3.SplitterDistance = 49;
-            this.splitContainer3.TabIndex = 0;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Controls.Add(this.btnDeleteMovie, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnClearMovie, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnUpdateMovie, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnAddMovie, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(201, 49);
-            this.tableLayoutPanel2.TabIndex = 18;
-            // 
-            // btnClearMovie
-            // 
-            this.btnClearMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClearMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btnClearMovie.FlatAppearance.BorderSize = 3;
-            this.btnClearMovie.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearMovie.Location = new System.Drawing.Point(150, 0);
-            this.btnClearMovie.Margin = new System.Windows.Forms.Padding(0);
-            this.btnClearMovie.Name = "btnClearMovie";
-            this.btnClearMovie.Size = new System.Drawing.Size(51, 49);
-            this.btnClearMovie.TabIndex = 18;
-            this.btnClearMovie.Text = "Clear";
-            this.btnClearMovie.UseVisualStyleBackColor = true;
-            this.btnClearMovie.Click += new System.EventHandler(this.btnClearMovie_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel1.Controls.Add(this.txtMovieCopies, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txtMovieYear, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txtMovieRating, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtMovieName, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtMoviePlot, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtMovieGenre, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 5);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(201, 282);
-            this.tableLayoutPanel1.TabIndex = 18;
-            // 
-            // txtMovieCopies
-            // 
-            this.txtMovieCopies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMovieCopies.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovieCopies.Location = new System.Drawing.Point(73, 203);
-            this.txtMovieCopies.Multiline = true;
-            this.txtMovieCopies.Name = "txtMovieCopies";
-            this.txtMovieCopies.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMovieCopies.Size = new System.Drawing.Size(125, 34);
-            this.txtMovieCopies.TabIndex = 24;
-            // 
-            // txtMovieYear
-            // 
-            this.txtMovieYear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMovieYear.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovieYear.Location = new System.Drawing.Point(73, 163);
-            this.txtMovieYear.Multiline = true;
-            this.txtMovieYear.Name = "txtMovieYear";
-            this.txtMovieYear.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMovieYear.Size = new System.Drawing.Size(125, 34);
-            this.txtMovieYear.TabIndex = 23;
-            // 
-            // txtMovieRating
-            // 
-            this.txtMovieRating.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMovieRating.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovieRating.Location = new System.Drawing.Point(73, 243);
-            this.txtMovieRating.Multiline = true;
-            this.txtMovieRating.Name = "txtMovieRating";
-            this.txtMovieRating.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMovieRating.Size = new System.Drawing.Size(125, 36);
-            this.txtMovieRating.TabIndex = 22;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 3);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 37);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Title";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtMovieName
-            // 
-            this.txtMovieName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMovieName.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovieName.Location = new System.Drawing.Point(73, 3);
-            this.txtMovieName.Multiline = true;
-            this.txtMovieName.Name = "txtMovieName";
-            this.txtMovieName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMovieName.Size = new System.Drawing.Size(125, 34);
-            this.txtMovieName.TabIndex = 3;
-            // 
-            // txtMoviePlot
-            // 
-            this.txtMoviePlot.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMoviePlot.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMoviePlot.Location = new System.Drawing.Point(73, 43);
-            this.txtMoviePlot.Multiline = true;
-            this.txtMoviePlot.Name = "txtMoviePlot";
-            this.txtMoviePlot.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMoviePlot.Size = new System.Drawing.Size(125, 74);
-            this.txtMoviePlot.TabIndex = 13;
-            // 
-            // txtMovieGenre
-            // 
-            this.txtMovieGenre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMovieGenre.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMovieGenre.Location = new System.Drawing.Point(73, 123);
-            this.txtMovieGenre.Multiline = true;
-            this.txtMovieGenre.Name = "txtMovieGenre";
-            this.txtMovieGenre.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMovieGenre.Size = new System.Drawing.Size(125, 34);
-            this.txtMovieGenre.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 43);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 77);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Plot";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 123);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 37);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Genre";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 163);
-            this.label6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 37);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Year";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label7
-            // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 203);
-            this.label7.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 37);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Copies";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label9
-            // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 243);
-            this.label9.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 39);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Rating";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // dgvMovies
-            // 
-            this.dgvMovies.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvMovies.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMovies.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvMovies.Location = new System.Drawing.Point(0, 0);
-            this.dgvMovies.Name = "dgvMovies";
-            this.dgvMovies.Size = new System.Drawing.Size(484, 335);
-            this.dgvMovies.TabIndex = 1;
-            this.dgvMovies.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovies_CellContentClick);
-            // 
             // Rentals
             // 
             this.Rentals.Controls.Add(this.splitContainer6);
@@ -836,8 +886,8 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.rdbOutRented, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.rdbAllRented, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.button5, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.button6, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnIssueMovie, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.btnReturnMovie, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -847,35 +897,37 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(202, 88);
             this.tableLayoutPanel5.TabIndex = 18;
             // 
-            // button5
+            // btnIssueMovie
             // 
-            this.button5.BackColor = System.Drawing.Color.Lime;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button5.FlatAppearance.BorderSize = 3;
-            this.button5.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 44);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Issue Movie";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnIssueMovie.BackColor = System.Drawing.Color.Lime;
+            this.btnIssueMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnIssueMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnIssueMovie.FlatAppearance.BorderSize = 3;
+            this.btnIssueMovie.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIssueMovie.Location = new System.Drawing.Point(0, 0);
+            this.btnIssueMovie.Margin = new System.Windows.Forms.Padding(0);
+            this.btnIssueMovie.Name = "btnIssueMovie";
+            this.btnIssueMovie.Size = new System.Drawing.Size(101, 44);
+            this.btnIssueMovie.TabIndex = 3;
+            this.btnIssueMovie.Text = "Issue Movie";
+            this.btnIssueMovie.UseVisualStyleBackColor = false;
+            this.btnIssueMovie.Click += new System.EventHandler(this.btnIssueMovie_Click);
             // 
-            // button6
+            // btnReturnMovie
             // 
-            this.button6.BackColor = System.Drawing.Color.Red;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button6.FlatAppearance.BorderSize = 3;
-            this.button6.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(101, 0);
-            this.button6.Margin = new System.Windows.Forms.Padding(0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(101, 44);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Return Movie";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnReturnMovie.BackColor = System.Drawing.Color.Red;
+            this.btnReturnMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReturnMovie.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnReturnMovie.FlatAppearance.BorderSize = 3;
+            this.btnReturnMovie.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnMovie.Location = new System.Drawing.Point(101, 0);
+            this.btnReturnMovie.Margin = new System.Windows.Forms.Padding(0);
+            this.btnReturnMovie.Name = "btnReturnMovie";
+            this.btnReturnMovie.Size = new System.Drawing.Size(101, 44);
+            this.btnReturnMovie.TabIndex = 0;
+            this.btnReturnMovie.Text = "Return Movie";
+            this.btnReturnMovie.UseVisualStyleBackColor = false;
+            this.btnReturnMovie.Click += new System.EventHandler(this.btnReturnMovie_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -914,6 +966,7 @@
             // txtRentalsFN
             // 
             this.txtRentalsFN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtRentalsFN.Enabled = false;
             this.txtRentalsFN.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentalsFN.Location = new System.Drawing.Point(73, 3);
             this.txtRentalsFN.Multiline = true;
@@ -925,6 +978,7 @@
             // txtRentalsLN
             // 
             this.txtRentalsLN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtRentalsLN.Enabled = false;
             this.txtRentalsLN.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentalsLN.Location = new System.Drawing.Point(73, 86);
             this.txtRentalsLN.Multiline = true;
@@ -936,6 +990,7 @@
             // txtRentalsMovieTitle
             // 
             this.txtRentalsMovieTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtRentalsMovieTitle.Enabled = false;
             this.txtRentalsMovieTitle.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentalsMovieTitle.Location = new System.Drawing.Point(73, 169);
             this.txtRentalsMovieTitle.Multiline = true;
@@ -978,22 +1033,75 @@
             this.dgvRentals.Name = "dgvRentals";
             this.dgvRentals.Size = new System.Drawing.Size(489, 341);
             this.dgvRentals.TabIndex = 1;
+            this.dgvRentals.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRentals_CellContentClick);
             // 
-            // lblCustID
+            // TopCustomersMovies
             // 
-            this.lblCustID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lblCustID.Location = new System.Drawing.Point(12, 117);
-            this.lblCustID.Name = "lblCustID";
-            this.lblCustID.Size = new System.Drawing.Size(100, 23);
-            this.lblCustID.TabIndex = 18;
+            this.TopCustomersMovies.Controls.Add(this.tableLayoutPanel7);
+            this.TopCustomersMovies.Location = new System.Drawing.Point(4, 33);
+            this.TopCustomersMovies.Name = "TopCustomersMovies";
+            this.TopCustomersMovies.Size = new System.Drawing.Size(695, 341);
+            this.TopCustomersMovies.TabIndex = 4;
+            this.TopCustomersMovies.Text = "Top Customers & Movies";
+            this.TopCustomersMovies.UseVisualStyleBackColor = true;
             // 
-            // lblMovieID
+            // tableLayoutPanel7
             // 
-            this.lblMovieID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lblMovieID.Location = new System.Drawing.Point(12, 170);
-            this.lblMovieID.Name = "lblMovieID";
-            this.lblMovieID.Size = new System.Drawing.Size(100, 23);
-            this.lblMovieID.TabIndex = 19;
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.dgvTopMovies, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.dgvTopCust, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label16, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 2;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(695, 341);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // dgvTopMovies
+            // 
+            this.dgvTopMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTopMovies.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTopMovies.Location = new System.Drawing.Point(350, 37);
+            this.dgvTopMovies.Name = "dgvTopMovies";
+            this.dgvTopMovies.Size = new System.Drawing.Size(342, 301);
+            this.dgvTopMovies.TabIndex = 6;
+            // 
+            // dgvTopCust
+            // 
+            this.dgvTopCust.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTopCust.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTopCust.Location = new System.Drawing.Point(3, 37);
+            this.dgvTopCust.Name = "dgvTopCust";
+            this.dgvTopCust.Size = new System.Drawing.Size(341, 301);
+            this.dgvTopCust.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(350, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(342, 34);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Top Movies";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(341, 34);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Top Customers";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbBackgroundImage
             // 
@@ -1006,14 +1114,90 @@
             this.pbBackgroundImage.TabIndex = 17;
             this.pbBackgroundImage.TabStop = false;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.lblCustID);
+            this.flowLayoutPanel1.Controls.Add(this.lblMovieID);
+            this.flowLayoutPanel1.Controls.Add(this.lblRMID);
+            this.flowLayoutPanel1.Controls.Add(this.lblDateRented);
+            this.flowLayoutPanel1.Controls.Add(this.lblDateReturned);
+            this.flowLayoutPanel1.Controls.Add(this.lblRentalFN);
+            this.flowLayoutPanel1.Controls.Add(this.lblRentalLN);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(21, 116);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(117, 442);
+            this.flowLayoutPanel1.TabIndex = 26;
+            // 
+            // lblCustID
+            // 
+            this.lblCustID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblCustID.Location = new System.Drawing.Point(3, 0);
+            this.lblCustID.Name = "lblCustID";
+            this.lblCustID.Padding = new System.Windows.Forms.Padding(3);
+            this.lblCustID.Size = new System.Drawing.Size(100, 23);
+            this.lblCustID.TabIndex = 18;
+            // 
+            // lblMovieID
+            // 
+            this.lblMovieID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblMovieID.Location = new System.Drawing.Point(3, 23);
+            this.lblMovieID.Name = "lblMovieID";
+            this.lblMovieID.Padding = new System.Windows.Forms.Padding(3);
+            this.lblMovieID.Size = new System.Drawing.Size(100, 23);
+            this.lblMovieID.TabIndex = 19;
+            // 
+            // lblRMID
+            // 
+            this.lblRMID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblRMID.Location = new System.Drawing.Point(3, 46);
+            this.lblRMID.Name = "lblRMID";
+            this.lblRMID.Padding = new System.Windows.Forms.Padding(3);
+            this.lblRMID.Size = new System.Drawing.Size(100, 23);
+            this.lblRMID.TabIndex = 20;
+            // 
+            // lblDateRented
+            // 
+            this.lblDateRented.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblDateRented.Location = new System.Drawing.Point(3, 69);
+            this.lblDateRented.Name = "lblDateRented";
+            this.lblDateRented.Padding = new System.Windows.Forms.Padding(3);
+            this.lblDateRented.Size = new System.Drawing.Size(100, 23);
+            this.lblDateRented.TabIndex = 21;
+            // 
+            // lblDateReturned
+            // 
+            this.lblDateReturned.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblDateReturned.Location = new System.Drawing.Point(3, 92);
+            this.lblDateReturned.Name = "lblDateReturned";
+            this.lblDateReturned.Padding = new System.Windows.Forms.Padding(3);
+            this.lblDateReturned.Size = new System.Drawing.Size(100, 23);
+            this.lblDateReturned.TabIndex = 22;
+            // 
+            // lblRentalFN
+            // 
+            this.lblRentalFN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblRentalFN.Location = new System.Drawing.Point(3, 115);
+            this.lblRentalFN.Name = "lblRentalFN";
+            this.lblRentalFN.Padding = new System.Windows.Forms.Padding(3);
+            this.lblRentalFN.Size = new System.Drawing.Size(100, 23);
+            this.lblRentalFN.TabIndex = 23;
+            // 
+            // lblRentalLN
+            // 
+            this.lblRentalLN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lblRentalLN.Location = new System.Drawing.Point(3, 138);
+            this.lblRentalLN.Name = "lblRentalLN";
+            this.lblRentalLN.Padding = new System.Windows.Forms.Padding(3);
+            this.lblRentalLN.Size = new System.Drawing.Size(100, 23);
+            this.lblRentalLN.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1205, 682);
-            this.Controls.Add(this.lblMovieID);
-            this.Controls.Add(this.lblCustID);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pbBackgroundImage);
@@ -1025,19 +1209,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.Customers.ResumeLayout(false);
-            this.splitContainer4.Panel1.ResumeLayout(false);
-            this.splitContainer4.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
-            this.splitContainer4.ResumeLayout(false);
-            this.splitContainer5.Panel1.ResumeLayout(false);
-            this.splitContainer5.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).EndInit();
-            this.splitContainer5.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.Movies.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
@@ -1051,6 +1222,19 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
+            this.Customers.ResumeLayout(false);
+            this.splitContainer4.Panel1.ResumeLayout(false);
+            this.splitContainer4.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
+            this.splitContainer4.ResumeLayout(false);
+            this.splitContainer5.Panel1.ResumeLayout(false);
+            this.splitContainer5.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).EndInit();
+            this.splitContainer5.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.Rentals.ResumeLayout(false);
             this.splitContainer6.Panel1.ResumeLayout(false);
             this.splitContainer6.Panel2.ResumeLayout(false);
@@ -1065,7 +1249,12 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRentals)).EndInit();
+            this.TopCustomersMovies.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTopMovies)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTopCust)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackgroundImage)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1119,8 +1308,8 @@
         private System.Windows.Forms.SplitContainer splitContainer6;
         private System.Windows.Forms.SplitContainer splitContainer7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnIssueMovie;
+        private System.Windows.Forms.Button btnReturnMovie;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtRentalsFN;
@@ -1131,8 +1320,22 @@
         private System.Windows.Forms.DataGridView dgvRentals;
         private System.Windows.Forms.Button btnClearCustomer;
         private System.Windows.Forms.Button btnClearMovie;
+        private System.Windows.Forms.TabPage TopCustomersMovies;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.DataGridView dgvTopMovies;
+        private System.Windows.Forms.DataGridView dgvTopCust;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label lblCustID;
         private System.Windows.Forms.Label lblMovieID;
+        private System.Windows.Forms.Label lblRMID;
+        private System.Windows.Forms.Label lblDateRented;
+        private System.Windows.Forms.Label lblDateReturned;
+        private System.Windows.Forms.Label lblRentalFN;
+        private System.Windows.Forms.Label lblRentalLN;
+        private System.Windows.Forms.TextBox txtRentalCost;
+        private System.Windows.Forms.Label label17;
     }
 }
 

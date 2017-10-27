@@ -10,13 +10,19 @@ using System.Windows.Forms;
 
 namespace DSED02ProjectMovies
 {
-    class Database
+    public class Database
     {
         //create connection and command and an adapter
         private SqlConnection Connection = new SqlConnection();
+
         private SqlCommand Command = new SqlCommand();
         private SqlDataAdapter da = new SqlDataAdapter();
 
+        private string year;
+        private int currentYear;
+        private int fiveYearsAgo;
+
+        #region Database
         public Database()
         {
             // add the connection string to run db
@@ -24,13 +30,22 @@ namespace DSED02ProjectMovies
             Connection.ConnectionString = connectionString;
             Command.Connection = Connection;
         }
+        #endregion
 
         public int CustomerID { get; set; }
         public int MovieID { get; set; }
-
+        public int RMID { get; set; }
+        public string FN { get; set; }
+        public string LN { get; set; }
+        public string DateRented { get; set; }
+        public string DateReturned { get; set; }
+        public DateTime Today { get; set; }
         public string Result { get; set; }
         public string InputID { get; set; }
         public Button fakebutton { get; set; }
+        public int MovieCost { get; set; }
+
+        public string MovieReleaseYear { get; set; }
 
         #region SQL Connection
         private void SqlConnection(DataTable dt)
@@ -46,7 +61,7 @@ namespace DSED02ProjectMovies
         }
         #endregion
 
-        #region Fill DGV's - Customers, Movies, Rentals
+        #region Fill DGV's - Customers, Movies, Rentals, Top Customers, Top Movies
         #region Fill DGV Customers
         public DataTable FillDGVCustomerWithCustomer()
         {
@@ -64,7 +79,7 @@ namespace DSED02ProjectMovies
         public DataTable FillDGVMovieWithMovie()
         {
             DataTable dt = new DataTable();
-            using (da = new SqlDataAdapter("select * from MoviesInfoData Order by Year DESC, Title ASC", Connection))
+            using (da = new SqlDataAdapter("select * from MoviesInfoData Order by Title, Year DESC", Connection))
             {
                 SqlConnection(dt);
             }
@@ -96,52 +111,34 @@ namespace DSED02ProjectMovies
             return dt;
         }
         #endregion
+
+        #region Fill DGV Top Customers
+        public DataTable FillDGVTopCustomerWithTopCustomer()
+        {
+            DataTable dt = new DataTable();
+            using (da = new SqlDataAdapter("select*from TopCustomers ORDER by 'Customer Count' DESC, 'Last Name'", Connection))
+            {
+                SqlConnection(dt);
+            }
+            //pass the datatable data to the DataGridView;
+            return dt;
+        }
         #endregion
 
-        #region UNSURE IF NEEDING THIS
-        //public DataTable FillDGVCustomerWithCustomerClick(string Customervalue)
-        //{
-        //    string SQL = "select 'First Name', 'Last Name', Address, Phone from CustomerData where CustID='" +
-        //                 Customervalue + "'";
-        //    using (da = new SqlDataAdapter(SQL, Connection))
-        //    {
-        //        //connect in to the DB and get the SQL
-        //        DataTable dt = new DataTable();
-        //        //create a datatable as we only have one table, customer
-        //        SqlConnection(dt);
-        //        return dt;
-        //    }
-        //}
-
-        //public DataTable FillDGVMovieWithMovieClick(string Movievalue)
-        //{
-        //    string SQL = "select Rating, Title, Year, 'Rental Cost', Copies, Plot, Genre from MoviesData where MovieID='" +
-        //                 Movievalue + "'";
-        //    using (da = new SqlDataAdapter(SQL, Connection))
-        //    {
-        //        //connect in to the DB and get the SQL
-        //        DataTable dt = new DataTable();
-        //        //create a datatable as we only have one table, customer
-        //        SqlConnection(dt);
-        //        return dt;
-        //    }
-        //}
-
-        //public DataTable FillLBLPlot(string Movievalue)
-        //{
-        //    string SQL = "select Plot from MoviesData where MovieID='" +
-        //                 Movievalue + "'";
-        //    using (da = new SqlDataAdapter(SQL, Connection))
-        //    {
-        //        //connect in to the DB and get the SQL
-        //        DataTable dt = new DataTable();
-        //        //create a datatable as we only have one table, customer
-        //        SqlConnection(dt);
-        //        return dt;
-        //    }
-        //} 
+        #region Fill DGV Top Movies
+        public DataTable FillDGVTopMovieWithTopMovie()
+        {
+            DataTable dt = new DataTable();
+            using (da = new SqlDataAdapter("select * from TopMovies ORDER by 'Movie Count' DESC, Title", Connection))
+            {
+                SqlConnection(dt);
+            }
+            //pass the datatable data to the DataGridView;
+            return dt;
+        }
         #endregion
 
+        #endregion
 
         #region Buttons - Insert or Update
         #region Insert or Update Customer
@@ -196,14 +193,14 @@ namespace DSED02ProjectMovies
         #endregion
 
         #region Insert or Update Movie
-        public string InsertOrUpdateMovie(string rating, string title, string year, string copies, string plot, string genre, string id, string addOrUpdate)
+        public string InsertOrUpdateMovie(string rating, string title, string year, string copies, string plot, string genre, int cost, string id, string addOrUpdate)
         {
             try
             {
                 if (addOrUpdate == "Add")
                 {
                     // Create a Command Object  //Create a Query
-                    var myCommand = new SqlCommand("INSERT INTO Movies (Rating, Title, Year, Copies, Plot, Genre)" + "VALUES(@rating, @title, @year, @copies, @plot, @genre)", Connection);
+                    var myCommand = new SqlCommand("INSERT INTO Movies (Rating, Title, Year, Copies, Plot, Genre, Rental_Cost)" + "VALUES(@rating, @title, @year, @copies, @plot, @genre, @cost)", Connection);
 
                     // create params
                     myCommand.Parameters.AddWithValue("rating", rating);
@@ -212,6 +209,7 @@ namespace DSED02ProjectMovies
                     myCommand.Parameters.AddWithValue("copies", copies);
                     myCommand.Parameters.AddWithValue("plot", plot);
                     myCommand.Parameters.AddWithValue("genre", genre);
+                    myCommand.Parameters.AddWithValue("cost", cost);
 
                     //Create and open a connection to SQL Server
                     Connection.Open();
@@ -220,7 +218,7 @@ namespace DSED02ProjectMovies
                 }
                 else if (addOrUpdate == "Update")
                 {
-                    var myCommand = new SqlCommand("UPDATE Movies SET Rating=@rating, Title=@title, Year=@year, Copies=@copies,Plot=@plot,Genre=@genre WHERE MovieID=@id", Connection);
+                    var myCommand = new SqlCommand("UPDATE Movies SET Rating=@rating, Title=@title, Year=@year, Copies=@copies,Plot=@plot,Genre=@genre, Rental_Cost=@cost WHERE MovieID=@id", Connection);
 
                     // create params
                     myCommand.Parameters.AddWithValue("rating", rating);
@@ -229,6 +227,7 @@ namespace DSED02ProjectMovies
                     myCommand.Parameters.AddWithValue("copies", copies);
                     myCommand.Parameters.AddWithValue("plot", plot);
                     myCommand.Parameters.AddWithValue("genre", genre);
+                    myCommand.Parameters.AddWithValue("cost", cost);
                     myCommand.Parameters.AddWithValue("id", id);
 
                     //Create and open a connection to SQL Server
@@ -248,6 +247,96 @@ namespace DSED02ProjectMovies
 
         }
         #endregion
+        #endregion
+
+        #region Buttons - Issue or Return Movie
+        #region Issue Movie
+        public string IssueMovie(string movieID, string custID, DateTime dateRented)
+        {
+            try
+            {
+                // Create a Command Object  //Create a Query
+                var myCommand = new SqlCommand("INSERT INTO RentedMovies (MovieIDFK, CustIDFK, DateRented)" + "VALUES(@movieID, @custID, @dateRented)", Connection);
+
+                // create params
+                myCommand.Parameters.AddWithValue("movieID", movieID);
+                myCommand.Parameters.AddWithValue("custID", custID);
+                myCommand.Parameters.AddWithValue("dateRented", dateRented);
+
+                //Create and open a connection to SQL Server
+                Connection.Open();
+                myCommand.ExecuteNonQuery();
+                Connection.Close();
+                return " is Successful";
+            }
+
+
+
+            catch (Exception ex)
+            {
+                // need to get it to close a second time as it jumps the first connection.close when ExecuteNonQuery fails.
+                Connection.Close();
+                return " has Failed with " + ex;
+            }
+
+
+        }
+        #endregion
+
+        #region Return Movie
+        public string ReturnMovie(DateTime dateReturned, string id)
+        {
+            try
+            {
+                // Create a Command Object  //Create a Query
+                var myCommand = new SqlCommand("UPDATE RentedMovies SET DateReturned=@dateReturned WHERE RMID=@id", Connection);
+
+                // create params
+                myCommand.Parameters.AddWithValue("dateReturned", dateReturned);
+                myCommand.Parameters.AddWithValue("id", id);
+
+                //Create and open a connection to SQL Server
+                Connection.Open();
+                myCommand.ExecuteNonQuery();
+                Connection.Close();
+                return " is Successful";
+            }
+
+
+
+            catch (Exception ex)
+            {
+                // need to get it to close a second time as it jumps the first connection.close when ExecuteNonQuery fails.
+                Connection.Close();
+                return " has Failed with " + ex;
+            }
+
+
+        }
+        #endregion
+        #endregion
+
+        #region Rental Cost
+        public int RentalCost()
+        {
+            year = (MovieReleaseYear);
+            currentYear = DateTime.Now.Year;
+            fiveYearsAgo = currentYear - 5;
+
+            if (fiveYearsAgo <= Convert.ToInt32(year))
+            {
+                return MovieCost = 5;
+            }
+            else if (fiveYearsAgo > Convert.ToInt32(year))
+            {
+                return MovieCost = 2;
+            }
+            else
+            {
+                return MovieCost = 0;
+            }
+
+        }
         #endregion
 
         #region Delete Customer or Movie
